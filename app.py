@@ -3,7 +3,6 @@ import requests
 from apikey import apikey
 from groq import Groq
 import streamlit as st
-
 os.environ["GROQ_API_KEY"]=apikey
 client = Groq(api_key=os.environ.get("GROQ_API_KEY"), )
 
